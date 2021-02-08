@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="try main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <title>Doctor Sign In Portal</title>
+
+  <style type="text/css">
+    *{
+  margin: 0;
+  padding: 0;
+}
+.wrapper{
+  width: 1170px;
+  margin: auto;
+}
+body{
+  background-image: url(image/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  background-position: center center;
+}
+.nav-area{
+  float: right;
+  list-style: none;
+  margin-top: 12px;
+}
+.nav-area li{
+  display: inline-block;
+}
+.nav-area li a{
+  color: black;
+  text-decoration: none;
+  padding: 8px 10px;
+  font-weight: bold;
+  font-family: poppins;
+  font-size: 16px;
+  transition: 0.6s ease;
+}
+.nav-area li a:hover{
+  background: green;
+  color: red;
+}
+ul.navbar li.active a,
+ul.navbar li.active:hover a{
+    background-color: black;
+    color: antiquewhite;
+}
+.logo img{
+  width: 50px;
+  margin-left: 5px;
+  height: auto;
+}
+.head-title{
+  font-size: 25px;
+  font-weight: bold;
+}
+.form-content
+{
+
+    padding-left: 35%;
+    padding-right: 35%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    height: 100%;
+    border: 0px solid #ced4da;
+    margin-bottom: 0;
+    align-content: center;
+}
+.form-control{
+    border-radius:1.5rem;
+    width: 40%;
+    height: 40%;
+}
+.form-content2{
+padding: 50px;
+margin-top: 50px;
+margin-bottom: 210px;
+border: 0 solid black;
+border-radius:1.5rem;
+background-color: white;
+
+}
+.form-content3{
+ padding: 40px;
+ margin-top: 15px;
+ margin-bottom: 210px;
+ border: 0 solid black;
+ border-radius:1.5rem;
+ background-color: white;
+}
+.form-content4{
+ padding: 40px;
+ margin-top: 40px;
+ margin-bottom: 210px;
+ border: 0 solid black;
+ border-radius:1.5rem;
+ background-color: white;
+}
+.home-content{
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: 1px solid black;
+}
+input[type=text]{
+  width: 100%;
+  padding: 8px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+}
+input[type=password] {
+  width: 100%;
+  padding: 8px 47px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  
+}
+#forgot{
+  margin-left: 95px;
+}
+.fa {
+  padding: 5px 15px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 12px;
+  border-radius: 1.5rem;
+}
+.fa:hover {
+    opacity: 0.9;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  margin-left: 30px;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  margin-left: 23px;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+  margin-left: 23px;
+}
+
+.button-area{
+  align-content: center;
+}
+.btnSignup
+{
+    border:none;
+    border-radius:2.5rem;
+    padding: 8px 45px;
+    cursor: pointer;
+    background: #0062cc;
+    color: #fff;
+    margin-top: 2%;
+    margin-left: 4%;
+    
+}
+.btnLogin
+{
+    border:none;
+    border-radius:2.5rem;
+    padding: 8px 45px;
+    cursor: pointer;
+    background: #0062cc;
+    color: #fff;
+    margin-top: 2%;
+    margin-left: 4%;
+}
+.btnReset{
+  border:none;
+  border-radius:2.5rem;
+  padding: 8px 50px;
+  cursor: pointer;
+  background: #0062cc;
+  color: #fff;
+  margin-left: 12%;
+}
+.btnResetpass{
+  border:none;
+  border-radius:2.5rem;
+  padding: 8px 50px;
+  cursor: pointer;
+  background: #0062cc;
+  color: #fff;
+  margin-left: 20%;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrapper">
+      <div class="logo">
+        <p class="head-title"> <img src="image/logo%20new.png" alt="">ONLINE HEALTH CONSULTATION SERVICE</p>
+        <nav>
+        <ul class="nav-area">
+          <li><a href="index.html"><img src="image/home.png" alt="" style="height: 20px; width: 20px;"></a></li>
+          
+          <li><a href="doc%20signin.html">DOCTOR</a></li>
+          <li class="active"><a href="try.html">ADMIN</a></li>
+          <li><a href="">CONTACT</a></li>
+          <li><a href="">ABOUT US</a></li>
+        </ul>
+      </nav>
+      </div>
+
+    </div>
+  </header>
+  <div class="form-content">
+      <form class="form-content2" action="doclogin.php" method="post">
+        <h3><b>Doctor Sign In</b></h3><br>
+        <label for="uid">
+          <b>E-mail:</b>
+        </label>
+        <input type="text" class="form-control" placeholder="Enter E-mail ID *" name= "email"/>
+        <label for="pwd">
+          <b>Password:</b>
+          <input type="password" class="form-control" placeholder="Enter Your Password *" name= "pass" />
+        </label>
+        <label for="">
+          <input type="checkbox" name="" value=""><b>Remember Me</b> <a href="reset%20pass.html" id="forgot">Forgot Password?</a>
+        </label>
+        <div class="button-area">
+          <input type="submit" class="btnLogin" value="Sign In">
+          <input type="submit" class="btnReset" value="Reset">
+        </div>
+        <div class="social-link">
+          <br><a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-google"></a>
+        <div style="align:center;">
+              <h6 style="margin-left:15%;"><b>Not Registered ? <a href="doc%20regis.html">Create an account</a></b></h6>
+            </div></div>
+      </form>
+    </div>
+</body>
+</html>
